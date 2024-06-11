@@ -43,3 +43,6 @@ orange= paletteer_c("ggthemes::Orange", 30)
 wordcloud(words = df$word, freq = df$freq, min.freq = 1, 
 max.words=200, random.order=FALSE, rot.per=0.35, color = orange
 )
+
+
+code --help
