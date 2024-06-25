@@ -29,7 +29,7 @@ dtm <- TermDocumentMatrix(nasa.corpus)
 matrix <- as.matrix(dtm) 
 words <- sort(rowSums(matrix),decreasing=TRUE) 
 df <- data.frame(word = names(words),freq=words) %>%
-filter(! word %in% c("and", "for", "method", "system", "using", "with", "from"))
+filter(! word %in% c("and", "for", "method", "system", "using", "with", "from", "the"))
 
 
 set.seed(1234) # for reproducibility 
